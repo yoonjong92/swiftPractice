@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "swiftPractice/ViewController.swift"
+            timestampString = "470910958.681803"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "didReceiveMemoryWarning()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "swiftPractice/ViewController.swift"
+            timestampString = "470910958.681803"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "swiftPractice.ViewController.recordingInProgress.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
+                  moduleName = "swiftPractice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/HyeonwooKim/Documents/swiftPractice/swiftPractice/swiftPractice/ViewController.swift"
+                  timestampString = "470910412.050238"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "swiftPractice.ViewController.recordingInProgress.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
+                  moduleName = "swiftPractice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/HyeonwooKim/Documents/swiftPractice/swiftPractice/swiftPractice/ViewController.swift"
+                  timestampString = "470910412.051714"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "swiftPractice.ViewController.recordingInProgress.materializeForSet : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
+                  moduleName = "swiftPractice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/HyeonwooKim/Documents/swiftPractice/swiftPractice/swiftPractice/ViewController.swift"
+                  timestampString = "470910412.051936"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "swiftPractice.ViewController.init (swiftPractice.ViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; swiftPractice.ViewController"
+                  moduleName = "swiftPractice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/HyeonwooKim/Documents/swiftPractice/swiftPractice/swiftPractice/ViewController.swift"
+                  timestampString = "470910412.052125"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "70">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "swiftPractice.ViewController.init (swiftPractice.ViewController.Type)(coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;swiftPractice.ViewController&gt;"
+                  moduleName = "swiftPractice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/HyeonwooKim/Documents/swiftPractice/swiftPractice/swiftPractice/ViewController.swift"
+                  timestampString = "470910412.052304"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
