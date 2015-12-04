@@ -17,34 +17,57 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Mb-XZ-Uv1">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recording" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ivY-gc-oAO">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.65618199110031128" green="0.53491461277008057" blue="0.91207635402679443" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Mb-XZ-Uv1">
                                 <rect key="frame" x="367" y="237" width="39" height="64"/>
                                 <animations/>
                                 <state key="normal" image="microphone"/>
+                                <connections>
+                                    <action selector="recordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5r3-jz-9ie"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="5Mb-XZ-Uv1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6u2-YK-tg6"/>
+                            <constraint firstItem="ivY-gc-oAO" firstAttribute="top" secondItem="5Mb-XZ-Uv1" secondAttribute="bottom" constant="14" id="KEd-uw-fkc"/>
                             <constraint firstItem="5Mb-XZ-Uv1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VOX-vD-qcQ"/>
+                            <constraint firstItem="ivY-gc-oAO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wwl-yt-322"/>
                         </constraints>
                         <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="ivY-gc-oAO"/>
+                            </mask>
                             <mask key="constraints">
                                 <exclude reference="6u2-YK-tg6"/>
                                 <exclude reference="VOX-vD-qcQ"/>
+                                <exclude reference="KEd-uw-fkc"/>
+                                <exclude reference="wwl-yt-322"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="ivY-gc-oAO"/>
+                            </mask>
                             <mask key="constraints">
                                 <include reference="6u2-YK-tg6"/>
                                 <include reference="VOX-vD-qcQ"/>
+                                <include reference="KEd-uw-fkc"/>
+                                <include reference="wwl-yt-322"/>
                             </mask>
                         </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="666" y="226"/>
         </scene>
     </scenes>
     <resources>
