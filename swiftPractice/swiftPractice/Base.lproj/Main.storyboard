@@ -17,13 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recording" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ivY-gc-oAO">
-                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.65618199110031128" green="0.53491461277008057" blue="0.91207635402679443" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Mb-XZ-Uv1">
                                 <rect key="frame" x="367" y="237" width="39" height="64"/>
                                 <animations/>
@@ -32,17 +25,35 @@
                                     <action selector="recordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5r3-jz-9ie"/>
                                 </connections>
                             </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zN6-mQ-bMz">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" image="stop"/>
+                                <connections>
+                                    <action selector="recordingAudioStop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Esu-nR-Bqj"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recording" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ivY-gc-oAO">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.65618199110031128" green="0.53491461277008057" blue="0.91207635402679443" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.74815899133682251" green="0.93354541063308716" blue="0.70132488012313843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="5Mb-XZ-Uv1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6u2-YK-tg6"/>
                             <constraint firstItem="ivY-gc-oAO" firstAttribute="top" secondItem="5Mb-XZ-Uv1" secondAttribute="bottom" constant="14" id="KEd-uw-fkc"/>
                             <constraint firstItem="5Mb-XZ-Uv1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VOX-vD-qcQ"/>
+                            <constraint firstItem="zN6-mQ-bMz" firstAttribute="top" secondItem="5Mb-XZ-Uv1" secondAttribute="bottom" constant="162" id="fuA-ar-upC"/>
+                            <constraint firstItem="zN6-mQ-bMz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rb1-oz-BIR"/>
                             <constraint firstItem="ivY-gc-oAO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wwl-yt-322"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
+                                <exclude reference="zN6-mQ-bMz"/>
                                 <exclude reference="ivY-gc-oAO"/>
                             </mask>
                             <mask key="constraints">
@@ -50,10 +61,13 @@
                                 <exclude reference="VOX-vD-qcQ"/>
                                 <exclude reference="KEd-uw-fkc"/>
                                 <exclude reference="wwl-yt-322"/>
+                                <exclude reference="fuA-ar-upC"/>
+                                <exclude reference="rb1-oz-BIR"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
+                                <include reference="zN6-mQ-bMz"/>
                                 <include reference="ivY-gc-oAO"/>
                             </mask>
                             <mask key="constraints">
@@ -61,16 +75,23 @@
                                 <include reference="VOX-vD-qcQ"/>
                                 <include reference="KEd-uw-fkc"/>
                                 <include reference="wwl-yt-322"/>
+                                <include reference="fuA-ar-upC"/>
+                                <include reference="rb1-oz-BIR"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="recordingInProgress" destination="ivY-gc-oAO" id="c5H-Ye-NCB"/>
+                        <outlet property="recordingStop" destination="zN6-mQ-bMz" id="KXk-hI-vv6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="666" y="226"/>
+            <point key="canvasLocation" x="-1365" y="-270"/>
         </scene>
     </scenes>
     <resources>
         <image name="microphone" width="39" height="64"/>
+        <image name="stop" width="64" height="64"/>
     </resources>
 </document>
