@@ -17,27 +17,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="현우야 안녕." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="udw-Db-WDa">
-                                <rect key="frame" x="200" y="290.5" width="200" height="20.5"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Mb-XZ-Uv1">
+                                <rect key="frame" x="367" y="237" width="39" height="64"/>
                                 <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="9n5-FY-7Db"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <state key="normal" image="microphone"/>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="udw-Db-WDa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dhm-jM-hvr"/>
-                            <constraint firstItem="udw-Db-WDa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="LS0-b3-8ik"/>
+                            <constraint firstItem="5Mb-XZ-Uv1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6u2-YK-tg6"/>
+                            <constraint firstItem="5Mb-XZ-Uv1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VOX-vD-qcQ"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="6u2-YK-tg6"/>
+                                <exclude reference="VOX-vD-qcQ"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="6u2-YK-tg6"/>
+                                <include reference="VOX-vD-qcQ"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="microphone" width="39" height="64"/>
+    </resources>
 </document>
