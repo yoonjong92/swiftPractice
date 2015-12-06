@@ -110,29 +110,61 @@
                                     <action selector="playSlowAudio:" destination="3hS-AV-zkv" eventType="touchUpInside" id="cI3-hY-yNl"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rVh-oX-aEA">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" image="rabbit"/>
+                                <connections>
+                                    <action selector="playFastAudio:" destination="3hS-AV-zkv" eventType="touchUpInside" id="q2Z-OC-wIi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kjp-GM-RoN">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" image="stop"/>
+                                <connections>
+                                    <action selector="stopAudio:" destination="3hS-AV-zkv" eventType="touchUpInside" id="vMh-R5-jb4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="dEv-LO-XDk" firstAttribute="top" secondItem="qIF-Za-Va8" secondAttribute="bottom" constant="50" id="GYT-7l-ZrC"/>
-                            <constraint firstItem="dEv-LO-XDk" firstAttribute="leading" secondItem="faI-CU-pxJ" secondAttribute="leadingMargin" constant="30" id="xop-eB-VRQ"/>
+                            <constraint firstItem="Kjp-GM-RoN" firstAttribute="centerX" secondItem="faI-CU-pxJ" secondAttribute="centerX" id="FbK-t9-TZa"/>
+                            <constraint firstItem="dEv-LO-XDk" firstAttribute="top" secondItem="qIF-Za-Va8" secondAttribute="bottom" constant="100" id="GYT-7l-ZrC"/>
+                            <constraint firstItem="rVh-oX-aEA" firstAttribute="top" secondItem="qIF-Za-Va8" secondAttribute="bottom" constant="100" id="MRZ-Rs-fXq"/>
+                            <constraint firstItem="IFz-Qn-EWq" firstAttribute="top" secondItem="Kjp-GM-RoN" secondAttribute="bottom" constant="56" id="ccN-jl-L4d"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rVh-oX-aEA" secondAttribute="trailing" constant="60" id="rG6-mx-Wle"/>
+                            <constraint firstItem="dEv-LO-XDk" firstAttribute="leading" secondItem="faI-CU-pxJ" secondAttribute="leadingMargin" constant="60" id="xop-eB-VRQ"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="dEv-LO-XDk"/>
+                                <exclude reference="rVh-oX-aEA"/>
+                                <exclude reference="Kjp-GM-RoN"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="GYT-7l-ZrC"/>
                                 <exclude reference="xop-eB-VRQ"/>
+                                <exclude reference="MRZ-Rs-fXq"/>
+                                <exclude reference="rG6-mx-Wle"/>
+                                <exclude reference="FbK-t9-TZa"/>
+                                <exclude reference="ccN-jl-L4d"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="dEv-LO-XDk"/>
+                                <include reference="rVh-oX-aEA"/>
+                                <include reference="Kjp-GM-RoN"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="GYT-7l-ZrC"/>
                                 <include reference="xop-eB-VRQ"/>
+                                <include reference="MRZ-Rs-fXq"/>
+                                <include reference="rG6-mx-Wle"/>
+                                <include reference="FbK-t9-TZa"/>
+                                <include reference="ccN-jl-L4d"/>
                             </mask>
                         </variation>
                     </view>
@@ -163,6 +195,7 @@
     </scenes>
     <resources>
         <image name="microphone" width="39" height="64"/>
+        <image name="rabbit" width="128" height="128"/>
         <image name="snail" width="128" height="128"/>
         <image name="stop" width="64" height="64"/>
     </resources>

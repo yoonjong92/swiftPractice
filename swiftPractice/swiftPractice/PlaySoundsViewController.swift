@@ -20,6 +20,7 @@ class PlaySoundsViewController: UIViewController {
             let filePathUrl = NSURL.fileURLWithPath(filePath)
             do {
                 try audioPlayer = AVAudioPlayer(contentsOfURL: filePathUrl)
+                audioPlayer.enableRate = true
             } catch {
                 //TODO: error handling??
             }
@@ -44,6 +45,19 @@ class PlaySoundsViewController: UIViewController {
     }
     */
     @IBAction func playSlowAudio(sender: UIButton) {
+        audioPlayer.stop()
+        audioPlayer.rate = 0.5
+        audioPlayer.currentTime = 0.0
         audioPlayer.play()
+        
+    }
+    @IBAction func playFastAudio(sender: UIButton) {
+        audioPlayer.stop()
+        audioPlayer.rate = 2.0
+        audioPlayer.currentTime = 0.0
+        audioPlayer.play()
+    }
+    @IBAction func stopAudio(sender: UIButton) {
+        audioPlayer.stop()
     }
 }
