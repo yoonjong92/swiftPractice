@@ -123,6 +123,20 @@
                                     <action selector="stopAudio:" destination="3hS-AV-zkv" eventType="touchUpInside" id="vMh-R5-jb4"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gk2-dc-VWK">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="squirrel"/>
+                                <connections>
+                                    <action selector="playChipmunkAudio:" destination="3hS-AV-zkv" eventType="touchUpInside" id="YpR-Up-U9P"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QL0-Ml-qBW">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="playSomeAudio:" destination="3hS-AV-zkv" eventType="touchUpInside" id="OlO-6B-C7c"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -130,22 +144,32 @@
                             <constraint firstItem="dEv-LO-XDk" firstAttribute="top" secondItem="qIF-Za-Va8" secondAttribute="bottom" constant="100" id="GYT-7l-ZrC"/>
                             <constraint firstItem="rVh-oX-aEA" firstAttribute="top" secondItem="qIF-Za-Va8" secondAttribute="bottom" constant="100" id="MRZ-Rs-fXq"/>
                             <constraint firstItem="IFz-Qn-EWq" firstAttribute="top" secondItem="Kjp-GM-RoN" secondAttribute="bottom" constant="56" id="ccN-jl-L4d"/>
+                            <constraint firstItem="gk2-dc-VWK" firstAttribute="leading" secondItem="faI-CU-pxJ" secondAttribute="leadingMargin" constant="30" id="h67-fD-L9M"/>
                             <constraint firstAttribute="trailingMargin" secondItem="rVh-oX-aEA" secondAttribute="trailing" constant="60" id="rG6-mx-Wle"/>
+                            <constraint firstItem="IFz-Qn-EWq" firstAttribute="top" secondItem="QL0-Ml-qBW" secondAttribute="bottom" constant="285" id="rhG-aw-iqN"/>
+                            <constraint firstItem="IFz-Qn-EWq" firstAttribute="top" secondItem="gk2-dc-VWK" secondAttribute="bottom" constant="250" id="vE9-4r-6dN"/>
                             <constraint firstItem="dEv-LO-XDk" firstAttribute="leading" secondItem="faI-CU-pxJ" secondAttribute="leadingMargin" constant="60" id="xop-eB-VRQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QL0-Ml-qBW" secondAttribute="trailing" constant="70" id="ydW-2X-ZaS"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="dEv-LO-XDk"/>
                                 <exclude reference="rVh-oX-aEA"/>
                                 <exclude reference="Kjp-GM-RoN"/>
+                                <exclude reference="gk2-dc-VWK"/>
+                                <exclude reference="QL0-Ml-qBW"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="ccN-jl-L4d"/>
-                                <exclude reference="FbK-t9-TZa"/>
                                 <exclude reference="GYT-7l-ZrC"/>
                                 <exclude reference="xop-eB-VRQ"/>
+                                <exclude reference="h67-fD-L9M"/>
                                 <exclude reference="MRZ-Rs-fXq"/>
                                 <exclude reference="rG6-mx-Wle"/>
+                                <exclude reference="ydW-2X-ZaS"/>
+                                <exclude reference="FbK-t9-TZa"/>
+                                <exclude reference="ccN-jl-L4d"/>
+                                <exclude reference="rhG-aw-iqN"/>
+                                <exclude reference="vE9-4r-6dN"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -153,14 +177,20 @@
                                 <include reference="dEv-LO-XDk"/>
                                 <include reference="rVh-oX-aEA"/>
                                 <include reference="Kjp-GM-RoN"/>
+                                <include reference="gk2-dc-VWK"/>
+                                <include reference="QL0-Ml-qBW"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="ccN-jl-L4d"/>
-                                <include reference="FbK-t9-TZa"/>
                                 <include reference="GYT-7l-ZrC"/>
                                 <include reference="xop-eB-VRQ"/>
+                                <include reference="h67-fD-L9M"/>
                                 <include reference="MRZ-Rs-fXq"/>
                                 <include reference="rG6-mx-Wle"/>
+                                <include reference="ydW-2X-ZaS"/>
+                                <include reference="FbK-t9-TZa"/>
+                                <include reference="ccN-jl-L4d"/>
+                                <include reference="rhG-aw-iqN"/>
+                                <include reference="vE9-4r-6dN"/>
                             </mask>
                         </variation>
                     </view>
@@ -192,6 +222,7 @@
         <image name="microphone" width="39" height="64"/>
         <image name="rabbit" width="128" height="128"/>
         <image name="snail" width="128" height="128"/>
+        <image name="squirrel" width="128" height="128"/>
         <image name="stop" width="64" height="64"/>
     </resources>
 </document>
