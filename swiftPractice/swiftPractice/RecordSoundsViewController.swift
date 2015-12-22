@@ -33,6 +33,12 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+}
+
+
+
+extension RecordSoundsViewController {
 
     @IBAction func audioStop(sender: UIButton) {
         recordingInProgress.hidden = true

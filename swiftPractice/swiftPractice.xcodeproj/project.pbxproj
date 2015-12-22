@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		2767F9101C13F9340024C9E3 /* PlaySoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2767F90F1C13F9340024C9E3 /* PlaySoundsViewController.swift */; };
-		2767F9141C14159E0024C9E3 /* 이럴거면 그러지말지.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2767F9131C14159E0024C9E3 /* 이럴거면 그러지말지.mp3 */; };
 		276BD64A1C27DCD100D56318 /* RecordedAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276BD6491C27DCD100D56318 /* RecordedAudio.swift */; };
+		276BD64C1C27F34500D56318 /* PlaySoundsViewController_Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276BD64B1C27F34500D56318 /* PlaySoundsViewController_Record.swift */; };
+		276BD6571C28017A00D56318 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 276BD6561C28017A00D56318 /* FBSDKCoreKit.framework */; };
+		276BD65D1C28DEC500D56318 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 276BD65C1C28DEC500D56318 /* FBSDKLoginKit.framework */; };
+		276BD6631C28E26000D56318 /* FacebookLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276BD6621C28E26000D56318 /* FacebookLoginViewController.swift */; };
 		8ED4B0A41C113999001A7ACA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED4B0A31C113999001A7ACA /* AppDelegate.swift */; };
 		8ED4B0A61C113999001A7ACA /* RecordSoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED4B0A51C113999001A7ACA /* RecordSoundsViewController.swift */; };
 		8ED4B0A91C113999001A7ACA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ED4B0A71C113999001A7ACA /* Main.storyboard */; };
@@ -38,8 +41,12 @@
 
 /* Begin PBXFileReference section */
 		2767F90F1C13F9340024C9E3 /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundsViewController.swift; sourceTree = "<group>"; };
-		2767F9131C14159E0024C9E3 /* 이럴거면 그러지말지.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "이럴거면 그러지말지.mp3"; path = "../이럴거면 그러지말지.mp3"; sourceTree = "<group>"; };
 		276BD6491C27DCD100D56318 /* RecordedAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordedAudio.swift; sourceTree = "<group>"; };
+		276BD64B1C27F34500D56318 /* PlaySoundsViewController_Record.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundsViewController_Record.swift; sourceTree = "<group>"; };
+		276BD6561C28017A00D56318 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "../../FacebookSDK/FacebookSDKs-iOS-20151111/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
+		276BD6581C2806EF00D56318 /* swiftPractice-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "swiftPractice-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		276BD65C1C28DEC500D56318 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "../../FacebookSDK/FacebookSDKs-iOS-20151111/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
+		276BD6621C28E26000D56318 /* FacebookLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookLoginViewController.swift; sourceTree = "<group>"; };
 		8ED4B0A01C113999001A7ACA /* swiftPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ED4B0A31C113999001A7ACA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8ED4B0A51C113999001A7ACA /* RecordSoundsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordSoundsViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +67,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				276BD65D1C28DEC500D56318 /* FBSDKLoginKit.framework in Frameworks */,
+				276BD6571C28017A00D56318 /* FBSDKCoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,13 +89,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		276BD6541C2800C200D56318 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				276BD65C1C28DEC500D56318 /* FBSDKLoginKit.framework */,
+				276BD6561C28017A00D56318 /* FBSDKCoreKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8ED4B0971C113999001A7ACA = {
 			isa = PBXGroup;
 			children = (
+				276BD6621C28E26000D56318 /* FacebookLoginViewController.swift */,
+				276BD64B1C27F34500D56318 /* PlaySoundsViewController_Record.swift */,
 				8ED4B0A21C113999001A7ACA /* swiftPractice */,
-				8ED4B0B71C11399A001A7ACA /* swiftPracticeTests */,
 				8ED4B0C21C11399A001A7ACA /* swiftPracticeUITests */,
+				8ED4B0B71C11399A001A7ACA /* swiftPracticeTests */,
 				8ED4B0A11C113999001A7ACA /* Products */,
+				276BD6541C2800C200D56318 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,7 +132,7 @@
 				8ED4B0AA1C113999001A7ACA /* Assets.xcassets */,
 				8ED4B0AC1C113999001A7ACA /* LaunchScreen.storyboard */,
 				8ED4B0AF1C113999001A7ACA /* Info.plist */,
-				2767F9131C14159E0024C9E3 /* 이럴거면 그러지말지.mp3 */,
+				276BD6581C2806EF00D56318 /* swiftPractice-Bridging-Header.h */,
 			);
 			path = swiftPractice;
 			sourceTree = "<group>";
@@ -196,7 +217,7 @@
 		8ED4B0981C113999001A7ACA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0710;
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "박윤종";
 				TargetAttributes = {
@@ -241,7 +262,6 @@
 				8ED4B0AE1C113999001A7ACA /* LaunchScreen.storyboard in Resources */,
 				8ED4B0AB1C113999001A7ACA /* Assets.xcassets in Resources */,
 				8ED4B0A91C113999001A7ACA /* Main.storyboard in Resources */,
-				2767F9141C14159E0024C9E3 /* 이럴거면 그러지말지.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +288,8 @@
 			files = (
 				276BD64A1C27DCD100D56318 /* RecordedAudio.swift in Sources */,
 				8ED4B0A61C113999001A7ACA /* RecordSoundsViewController.swift in Sources */,
+				276BD6631C28E26000D56318 /* FacebookLoginViewController.swift in Sources */,
+				276BD64C1C27F34500D56318 /* PlaySoundsViewController_Record.swift in Sources */,
 				2767F9101C13F9340024C9E3 /* PlaySoundsViewController.swift in Sources */,
 				8ED4B0A41C113999001A7ACA /* AppDelegate.swift in Sources */,
 			);
@@ -409,11 +431,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = "/Users/HyeonwooKim/Documents/FacebookSDK/FacebookSDKs-iOS-20151111";
 				INFOPLIST_FILE = swiftPractice/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) /Users/HyeonwooKim/Documents/FacebookSDK/FacebookSDKs-iOS-20151111 @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.theventures.swiftPractice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "swiftPractice-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -421,11 +447,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = "/Users/HyeonwooKim/Documents/FacebookSDK/FacebookSDKs-iOS-20151111";
 				INFOPLIST_FILE = swiftPractice/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) /Users/HyeonwooKim/Documents/FacebookSDK/FacebookSDKs-iOS-20151111 @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.theventures.swiftPractice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "swiftPractice-Bridging-Header.h";
 			};
 			name = Release;
 		};
