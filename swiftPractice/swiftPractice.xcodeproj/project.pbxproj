@@ -13,6 +13,13 @@
 		276BD6571C28017A00D56318 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 276BD6561C28017A00D56318 /* FBSDKCoreKit.framework */; };
 		276BD65D1C28DEC500D56318 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 276BD65C1C28DEC500D56318 /* FBSDKLoginKit.framework */; };
 		276BD6631C28E26000D56318 /* FacebookLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276BD6621C28E26000D56318 /* FacebookLoginViewController.swift */; };
+		276BD66B1C28F84900D56318 /* photo1.png in Resources */ = {isa = PBXBuildFile; fileRef = 276BD6651C28F84900D56318 /* photo1.png */; };
+		276BD66C1C28F84900D56318 /* photo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 276BD6661C28F84900D56318 /* photo2.png */; };
+		276BD66D1C28F84900D56318 /* photo3.png in Resources */ = {isa = PBXBuildFile; fileRef = 276BD6671C28F84900D56318 /* photo3.png */; };
+		276BD66E1C28F84900D56318 /* photo4.png in Resources */ = {isa = PBXBuildFile; fileRef = 276BD6681C28F84900D56318 /* photo4.png */; };
+		276BD66F1C28F84900D56318 /* photo5.png in Resources */ = {isa = PBXBuildFile; fileRef = 276BD6691C28F84900D56318 /* photo5.png */; };
+		276BD6701C28F84900D56318 /* slow.png in Resources */ = {isa = PBXBuildFile; fileRef = 276BD66A1C28F84900D56318 /* slow.png */; };
+		27C944371C28FC6E00B0F8B3 /* ImageScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C944361C28FC6E00B0F8B3 /* ImageScrollViewController.swift */; };
 		8ED4B0A41C113999001A7ACA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED4B0A31C113999001A7ACA /* AppDelegate.swift */; };
 		8ED4B0A61C113999001A7ACA /* RecordSoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED4B0A51C113999001A7ACA /* RecordSoundsViewController.swift */; };
 		8ED4B0A91C113999001A7ACA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ED4B0A71C113999001A7ACA /* Main.storyboard */; };
@@ -47,6 +54,13 @@
 		276BD6581C2806EF00D56318 /* swiftPractice-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "swiftPractice-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		276BD65C1C28DEC500D56318 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "../../FacebookSDK/FacebookSDKs-iOS-20151111/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
 		276BD6621C28E26000D56318 /* FacebookLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookLoginViewController.swift; sourceTree = "<group>"; };
+		276BD6651C28F84900D56318 /* photo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo1.png; sourceTree = "<group>"; };
+		276BD6661C28F84900D56318 /* photo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo2.png; sourceTree = "<group>"; };
+		276BD6671C28F84900D56318 /* photo3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo3.png; sourceTree = "<group>"; };
+		276BD6681C28F84900D56318 /* photo4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo4.png; sourceTree = "<group>"; };
+		276BD6691C28F84900D56318 /* photo5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo5.png; sourceTree = "<group>"; };
+		276BD66A1C28F84900D56318 /* slow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slow.png; sourceTree = "<group>"; };
+		27C944361C28FC6E00B0F8B3 /* ImageScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageScrollViewController.swift; sourceTree = "<group>"; };
 		8ED4B0A01C113999001A7ACA /* swiftPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ED4B0A31C113999001A7ACA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8ED4B0A51C113999001A7ACA /* RecordSoundsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordSoundsViewController.swift; sourceTree = "<group>"; };
@@ -98,9 +112,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		276BD6641C28F84900D56318 /* ScrollViewsResources */ = {
+			isa = PBXGroup;
+			children = (
+				276BD6651C28F84900D56318 /* photo1.png */,
+				276BD6661C28F84900D56318 /* photo2.png */,
+				276BD6671C28F84900D56318 /* photo3.png */,
+				276BD6681C28F84900D56318 /* photo4.png */,
+				276BD6691C28F84900D56318 /* photo5.png */,
+				276BD66A1C28F84900D56318 /* slow.png */,
+			);
+			path = ScrollViewsResources;
+			sourceTree = "<group>";
+		};
 		8ED4B0971C113999001A7ACA = {
 			isa = PBXGroup;
 			children = (
+				276BD6641C28F84900D56318 /* ScrollViewsResources */,
 				276BD6621C28E26000D56318 /* FacebookLoginViewController.swift */,
 				276BD64B1C27F34500D56318 /* PlaySoundsViewController_Record.swift */,
 				8ED4B0A21C113999001A7ACA /* swiftPractice */,
@@ -133,6 +161,7 @@
 				8ED4B0AC1C113999001A7ACA /* LaunchScreen.storyboard */,
 				8ED4B0AF1C113999001A7ACA /* Info.plist */,
 				276BD6581C2806EF00D56318 /* swiftPractice-Bridging-Header.h */,
+				27C944361C28FC6E00B0F8B3 /* ImageScrollViewController.swift */,
 			);
 			path = swiftPractice;
 			sourceTree = "<group>";
@@ -259,8 +288,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				276BD66E1C28F84900D56318 /* photo4.png in Resources */,
+				276BD66C1C28F84900D56318 /* photo2.png in Resources */,
+				276BD6701C28F84900D56318 /* slow.png in Resources */,
+				276BD66B1C28F84900D56318 /* photo1.png in Resources */,
 				8ED4B0AE1C113999001A7ACA /* LaunchScreen.storyboard in Resources */,
+				276BD66F1C28F84900D56318 /* photo5.png in Resources */,
 				8ED4B0AB1C113999001A7ACA /* Assets.xcassets in Resources */,
+				276BD66D1C28F84900D56318 /* photo3.png in Resources */,
 				8ED4B0A91C113999001A7ACA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,6 +326,7 @@
 				276BD6631C28E26000D56318 /* FacebookLoginViewController.swift in Sources */,
 				276BD64C1C27F34500D56318 /* PlaySoundsViewController_Record.swift in Sources */,
 				2767F9101C13F9340024C9E3 /* PlaySoundsViewController.swift in Sources */,
+				27C944371C28FC6E00B0F8B3 /* ImageScrollViewController.swift in Sources */,
 				8ED4B0A41C113999001A7ACA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
