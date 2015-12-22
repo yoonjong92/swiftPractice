@@ -48,6 +48,8 @@ class FacebookLoginViewController: UIViewController, FBSDKLoginButtonDelegate {
         else {
             if (result.grantedPermissions.contains("email")) {
                 self.returnUserData()
+                let loginManager = FBSDKLoginManager()
+                loginManager.logOut()
             }
         }
     }
@@ -65,8 +67,11 @@ class FacebookLoginViewController: UIViewController, FBSDKLoginButtonDelegate {
             }
             else {
                 print ("fetched user: \(result)")
-                let userName : NSString = result.valueForKey("name") as! NSString
+                var userName = ""
                 var userEmail = ""
+                if let tmpName = result.valueForKey("name") as! String? {
+                    userName = tmpName
+                }
                 if let tmpString = result.valueForKey("email") as! String? {
                     userEmail = tmpString
                 }
