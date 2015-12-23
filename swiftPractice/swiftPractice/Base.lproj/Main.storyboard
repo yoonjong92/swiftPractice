@@ -90,15 +90,15 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="wt5-ow-csx" style="IBUITableViewCellStyleDefault" id="P2y-Lh-CbM">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="wt5-ow-csx" style="IBUITableViewCellStyleDefault" id="P2y-Lh-CbM">
                                         <rect key="frame" x="0.0" y="152" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="P2y-Lh-CbM" id="Cmv-VA-eUV">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Paged" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wt5-ow-csx">
-                                                    <rect key="frame" x="15" y="0.0" width="290" height="43.5"/>
+                                                    <rect key="frame" x="15" y="0.0" width="270" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -106,6 +106,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="I9t-g7-yQB" kind="push" id="22c-vb-YTp"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="OII-QV-3hU" style="IBUITableViewCellStyleDefault" id="1Na-Rb-F37">
                                         <rect key="frame" x="0.0" y="196" width="320" height="44"/>
@@ -170,6 +173,45 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dGK-kT-Lb3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="262" y="1267"/>
+        </scene>
+        <!--Paged Scroll View Controller-->
+        <scene sceneID="hbu-TM-IP6">
+            <objects>
+                <viewController id="I9t-g7-yQB" customClass="PagedScrollViewController" customModule="swiftPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QvC-SP-fgm"/>
+                        <viewControllerLayoutGuide type="bottom" id="rhw-4k-iTq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7s1-oH-x8x">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="aUj-af-Jqc">
+                                <rect key="frame" x="141" y="523" width="39" height="37"/>
+                            </pageControl>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WP2-nX-Uc3">
+                                <rect key="frame" x="0.0" y="64" width="320" height="451"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="rhw-4k-iTq" firstAttribute="top" secondItem="aUj-af-Jqc" secondAttribute="bottom" constant="8" id="2bP-Os-kRH"/>
+                            <constraint firstItem="aUj-af-Jqc" firstAttribute="centerX" secondItem="7s1-oH-x8x" secondAttribute="centerX" id="BFh-lc-Ehd"/>
+                            <constraint firstItem="WP2-nX-Uc3" firstAttribute="leading" secondItem="7s1-oH-x8x" secondAttribute="leading" id="Fxa-Mu-gbj"/>
+                            <constraint firstItem="aUj-af-Jqc" firstAttribute="top" secondItem="WP2-nX-Uc3" secondAttribute="bottom" constant="8" id="Ibo-Fu-vRV"/>
+                            <constraint firstItem="WP2-nX-Uc3" firstAttribute="top" secondItem="QvC-SP-fgm" secondAttribute="bottom" id="Psq-yI-J5j"/>
+                            <constraint firstAttribute="trailing" secondItem="WP2-nX-Uc3" secondAttribute="trailing" id="XtW-l6-Yf8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="WKF-bY-TFG"/>
+                    <connections>
+                        <outlet property="pageControl" destination="aUj-af-Jqc" id="t9q-Tt-MhB"/>
+                        <outlet property="scrollView" destination="WP2-nX-Uc3" id="mBr-1J-nAP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a4w-Fa-23l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="262" y="1982"/>
         </scene>
         <!--Log in-->
         <scene sceneID="wdg-p5-e3p">

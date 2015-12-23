@@ -81,8 +81,9 @@ class ImageScrollViewController: UIViewController, UIScrollViewDelegate {
         let rectToZoomTo = CGRectMake(x, y, w, h)
         
         scrollView.zoomToRect(rectToZoomTo, animated: true)
+        
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
